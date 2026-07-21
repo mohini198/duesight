@@ -1,0 +1,15 @@
+# =====================================================================
+# railway.toml — Railway deployment configuration
+# startCommand removed — Dockerfile's CMD handles startup instead
+# =====================================================================
+
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[environments.production.deploy]
+numReplicas = 1
