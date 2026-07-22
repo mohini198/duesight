@@ -7,7 +7,7 @@ from typing import Optional
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from langgraph.checkpoint.redis.aio import AsyncRedisSaver
+from langgraph.checkpoint.memory import MemorySaver
 from sqlalchemy.orm import Session
 
 from app_orchestrator import workflow, cost_tracker
@@ -22,7 +22,7 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True,
 
 Base.metadata.create_all(bind=engine)
 
-REDIS_URI = os.getenv("REDIS_URL", os.getenv("REDIS_URI", "redis://localhost:6379"))
+
 
 # =====================================================================
 # HEALTH CHECK — keeps Railway container warm, prevents cold starts
