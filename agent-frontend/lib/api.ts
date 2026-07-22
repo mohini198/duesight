@@ -4,6 +4,7 @@
 
 const API_BASE = "https://duesight-3hu1.onrender.com";
 const WS_BASE  = "wss://duesight-3hu1.onrender.com";
+
 // ── Auth ──────────────────────────────────────────────────────────────
 
 export async function register(email: string, password: string) {

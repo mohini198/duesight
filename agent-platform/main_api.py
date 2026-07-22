@@ -22,8 +22,6 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True,
 
 Base.metadata.create_all(bind=engine)
 
-
-
 # =====================================================================
 # HEALTH CHECK — keeps Railway container warm, prevents cold starts
 # =====================================================================
@@ -33,7 +31,7 @@ async def health():
 
 # =====================================================================
 # PAUSE REGISTRY (unchanged)
-# =====================================================================
+# ====================================================`0`=================
 pending_reviews : dict = {}
 review_decisions: dict = {}
 
@@ -139,7 +137,9 @@ async def websocket_endpoint(websocket: WebSocket, token: str,
             await asyncio.sleep(0.5)
 
             checkpointer = MemorySaver()
+
             if True:
+
 
                 compiled_graph = workflow.compile(
                     checkpointer=checkpointer,
