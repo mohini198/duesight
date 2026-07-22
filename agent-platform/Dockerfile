@@ -29,4 +29,4 @@ EXPOSE 8000
 
 # Start the FastAPI server
 # Railway injects $PORT automatically — shell form (no brackets) lets it expand correctly
-CMD uvicorn main_api:app --host 0.0.0.0 --port $PORTcdcd
+CMD ["sh", "-c", "uvicorn main_api:app --host 0.0.0.0 --port ${PORT:-10000}"]
