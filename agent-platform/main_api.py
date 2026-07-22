@@ -138,8 +138,8 @@ async def websocket_endpoint(websocket: WebSocket, token: str,
                 "message": f"🏦 DueSight Initializing: Assembling due diligence team for '{task_prompt}'..."})
             await asyncio.sleep(0.5)
 
-            async with AsyncRedisSaver.from_conn_string(REDIS_URI) as checkpointer:
-                await checkpointer.asetup()
+            checkpointer = MemorySaver()
+            if True:
 
                 compiled_graph = workflow.compile(
                     checkpointer=checkpointer,
