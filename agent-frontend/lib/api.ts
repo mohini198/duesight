@@ -2,9 +2,8 @@
 // lib/api.ts — All API calls + WebSocket logic
 // =====================================================================
 
-const API_BASE = "https://agent-platform-production-a13b.up.railway.app";
-const WS_BASE  = "wss://agent-platform-production-a13b.up.railway.app";
-
+const API_BASE = "https://duesight-3hu1.onrender.com";
+const WS_BASE  = "wss://duesight-3hu1.onrender.com";
 // ── Auth ──────────────────────────────────────────────────────────────
 
 export async function register(email: string, password: string) {
