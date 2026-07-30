@@ -16,6 +16,20 @@
 **API Docs:** (https://duesight-3hu1.onrender.com/docs)
 
 ---
+## 📸 Preview
+
+### Login
+![Login](./docs/login.png)
+
+### Live Agent Analysis
+![Agent Stream](./docs/agent.png)
+
+### Human Approval Gate
+![Approval](./docs/approval.png)
+
+### Final Investment Memo
+![Final Memo 1](./docs/final_memo/final_memo.png)
+![Final Memo 2](./docs/final_memo/final_memo2.png)
 
 ## 🧩 The Problem
 
