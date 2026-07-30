@@ -12,8 +12,8 @@
 
 ## 🚀 Live Demo
 
-**App:** [agent-frontend-henna-pi.vercel.app](https://agent-frontend-henna-pi.vercel.app)
-**API Docs:** [agent-platform-production-a13b.up.railway.app/docs](https://agent-platform-production-a13b.up.railway.app/docs)
+**App:** [[agent-frontend-henna-pi.vercel.app](https://agent-frontend-henna-pi.vercel.app)](https://duesight-five.vercel.app/)
+**API Docs:** [[agent-platform-production-a13b.up.railway.app/docs](https://agent-platform-production-a13b.up.railway.app/docs)](https://duesight-3hu1.onrender.com/docs)
 
 ---
 
